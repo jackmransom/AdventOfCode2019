@@ -6,7 +6,7 @@
 #include <cmath>
 
 auto part_one(std::vector<double>& vec) {
-	return std::transform_reduce(vec.begin(), vec.end(), 0, std::plus<>(), [](auto mass) { return std::floor(mass / 3.0) - 2.0; });
+    return std::transform_reduce(vec.begin(), vec.end(), 0, std::plus<>(), [](auto mass) { return std::floor(mass / 3.0) - 2.0; });
 }
 
 auto part_two(std::vector<double>& vec) {
